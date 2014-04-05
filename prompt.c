@@ -5,7 +5,7 @@
 #include <string.h>
 
 static char buffer[2048];
-fhar* readline(char* prompt) {
+char* readline(char* prompt) {
 	fputs("jispy> ", stdout);
 	fgets(buffer, 2048, stdin);
 	char* cpy = malloc(strlen(buffer)+1)
